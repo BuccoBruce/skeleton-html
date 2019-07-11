@@ -6,7 +6,34 @@
 <body>
   <script>
     // Your JavaScript goes here!
-    console.log("Hello, World!")
+
+    function add7(num) {
+      num = num + 7;
+      console.log("add7 function output calling 3: " + num);
+    }
+
+    function multiply(num1, num2) {
+      product = num1 * num2;
+      console.log("multiply function output calling 3 and 5: " + product);
+    }
+
+    function capitalize(string) {
+      firstOutput = string.charAt(0).toUpperCase();
+      secondOutput = string.slice(1).toLowerCase();
+      output = firstOutput + secondOutput;
+      console.log("String output is: " + output);
+    }
+
+    function lastLetter(string) {
+      output = string.slice(-1);
+      console.log("Last letter of " + string + " is: " + output);
+    }
+
+    add7(3);
+    multiply(3, 5);
+    capitalize("wombat");
+    lastLetter("Papa Bear");
+
   </script>
 </body>
 </html>
